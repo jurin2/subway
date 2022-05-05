@@ -111,11 +111,12 @@
     letter-spacing: -0.04em;
     padding-top: 20px;   
 }
+
 .subs{
     overflow: hidden;
     position: absolute;
     left: 0;
-    top: 67px;
+    top: 68px;
     right: 0;
     width: 100%;
     z-index: 2;
@@ -129,10 +130,9 @@
 }
 .subs .navdepth{
     width: 100%;
-    height: 205px;
+    height: 0;
     transition: 1s;
     background-color: #fff;
-    border-top: 1px solid #e5e5e5;
     transition: 0.3s;
 }
 .subs .navdepth li{
