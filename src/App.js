@@ -1,23 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+import './css/reset.scss';
+import './css/App.scss';
+
+import {useState} from 'react';
+import Header from './Header'
+import Myslide from './Myslide'
+import NavData from './NavData';
+import QuickLink from './QuickLink';
+
+
+function Section(props){
+  return(
+    <section>
+      <div className="container">
+        중간
+      </div>
+    </section>
+  );
+}
+
+function Footer(props){
+  return(
+    <footer>
+      <div className="container">
+        푸터
+      </div>
+    </footer>
+  );
+}
 
 function App() {
+  let [title,setTitle] = useState(NavData);
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Header title={title}/>
+        <Myslide/>
+        <QuickLink/>
+        <Section />
+        <Footer/>
     </div>
   );
 }
