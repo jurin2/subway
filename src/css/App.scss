@@ -14,7 +14,9 @@
     min-width: 1280px;
     position: relative;
 }
-
+.container{
+    position: relative;
+}
 // HEADER
 .header{
     border-top: 5px solid #009223;
@@ -26,18 +28,18 @@
     width: 100%;
     min-width: 1280px;
     height: 165px;
-    // overflow: hidden;
+
+    h1{
+        position: absolute;
+        top: 35px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
 .row{
     position: relative;
     max-width: 1170px;
     margin: 0 auto;
-}
-.header h1{
-    position: absolute;
-    top: 35px;
-    left: 50%;
-    transform: translateX(-50%);
 }
 .userNav{
     position: absolute;
@@ -104,12 +106,13 @@
     height: 67px;
     position: relative;
     cursor: pointer;
-}
-.mains li a{
-    display: block;
-    font: {size: 18px; weight: bold;};
-    letter-spacing: -0.04em;
-    padding-top: 20px;   
+
+    a{
+        display: block;
+        font: {size: 18px; weight: bold;};
+        letter-spacing: -0.04em;
+        padding-top: 20px;  
+    }
 }
 
 .subs{
@@ -120,13 +123,16 @@
     right: 0;
     width: 100%;
     z-index: 2;
-}
-.subs li a{
-    font-size: 15px;
-    color: #666;
-    padding: 8px 0 9px;
-    display: block;
-    letter-spacing: -0.05em;
+
+    li{
+        a{
+            font-size: 15px;
+            color: #666;
+            padding: 8px 0 9px;
+            display: block;
+            letter-spacing: -0.05em;
+        }
+    }
 }
 .subs .navdepth{
     width: 100%;
@@ -134,27 +140,28 @@
     transition: 1s;
     background-color: #fff;
     transition: 0.3s;
-}
-.subs .navdepth li{
-    display: inline-block;
-    vertical-align: top;
-    width: 165px;
-    padding: 20px 0;
+
+    li{
+        display: inline-block;
+        vertical-align: top;
+        width: 165px;
+        padding: 20px 0;
+    }
 }
 
 // SLIDER
-.swiper-wrapper{
-    padding-top: 170px;
+.header + div.swiper{
+    padding-top: 170px !important;
 
     .swiper-slide{
         height: 100%;
         text-align: center;
     }
 }
-.swiper .swiper-button-next, .swiper .swiper-button-prev{
+.header .swiper .swiper-button-next, .swiper .swiper-button-prev{
     top: 65%;
 }
-.header+.swiper-horizontal>.swiper-pagination{
+.header + .swiper-horizontal>.swiper-pagination{
     position: absolute;
     bottom:40px;
     left: 555px;
@@ -178,7 +185,7 @@
 .quick_link{
     position: absolute;
     left:50%;
-    top: 92%;
+    top: 580px;
     z-index: 2;
 }
 .quick_link .container>div{
@@ -219,7 +226,385 @@
 .fran{
     background-color: #009223;
     border-bottom-right-radius: 30px;
+
+    strong{
+        color: #fff;
+    }
 }
-.fran strong{
+
+// section
+// hd
+.section{
+    background-image: url("../images/bg_content.gif");
+}
+.section-subway-menu{
+    margin-top: 120px;
+    height: 560px;
+    background-color: #fff;
+}
+.section-subway-menu .hd{
+    width: 1170px;
+    margin: 0 auto;
+    padding-bottom: 33px;
+    position: relative;    
+}
+.section-subway-menu .hd h2{
+    font-size: 40px;
+    font-weight: 900;
+    color: #292929;
+    min-height: 60px;
+    margin-bottom: 1px;
+    padding: 17px 0 0 25px;
+    margin-bottom: 1px;
+    background-image: url("../images/bul_tit.png");
+    background-repeat: no-repeat;
+    background-position-y: 5px;
+}
+.section-subway-menu .hd .tab{
+    position: absolute;
+    right: 0;
+    top: 44px;
+}
+.section-subway-menu .hd .tab ul{
+    overflow: hidden;
+}
+.section-subway-menu .hd .tab ul li{
+    float: left;
+    position: relative;
+    margin-left: 23px;
+    padding: 0 0 0 25px;
+    border-left: 1px solid #ddd;
+}
+.section-subway-menu .hd .tab ul li .active{
+    color: #009223;
+}
+.section-subway-menu .hd .tab ul li:first-child{
+    border-left: none;
+}
+.section-subway-menu .hd .tab ul li a{
+    font-size: 16px;
+    font-weight: 500;
+    color: #666;
+}
+
+// section swiper
+.swiper-sub-wrap{
+    width: 100%;
+}
+.section .swiper{
+    width: 1200px;
+    position: relative;
+    height: 320px;
+
+}
+.section .swiper .swiper-wrapper>div{
+    width: 260px !important; 
+}
+.section .swiper-button-next, .swiper-button-prev{
+    top: 65%;
+}
+.section img{
+    width: 260px;
+}
+.section .swiper-button-next, .section .swiper-button-prev{
+    top: 40%;
+}
+.section .swiper-slide{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+.section .swiper-slide strong{
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 600;
+    color: #292929;
+    margin: 3px 0 10px;
+    text-align: center;
+}
+.section .swiper-slide p{
+    font-size: 12.8px;
+    font-weight: 400;
+    color: #999;
+    line-height: 21px;
+    width: 260px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+// section subway
+.section-subway{
+    width: 1280px;
+    margin: 0 auto;
+    padding: 80px 0;
+}
+.section-subway .content-top{
+    display: flex;
+    flex-flow: row nowrap;
+    margin-left: 55px;
+}
+.section-subway .content-top .utilization{
+    background-image: url("../images/bg_utilization.png");
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 300px;
+    position: relative;
+}
+.section-subway .content-top .utilization p{
+    position: absolute;
+    left: 10%;
+    top: 12%;
     color: #fff;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 1.4;
+}
+.section-subway .content-top .utilization a{
+    position: absolute;
+    left: 10%;
+    top: 75%;
+    color: #fff;
+    font-weight: 500;
+    font-size: 17px;
+    border: 2px solid #fff;
+    padding: 8px 16px;
+    border-radius: 35px;
+}
+.section-subway .content-top .history{
+    width: 825px;
+    position: relative;
+}
+.section-subway .content-top .history img{
+    width: 100%;
+}
+.section-subway .content-top .history p{
+    position: absolute;
+    left: 50%;
+    top: 12%;
+    color: #fff;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 1.4;
+}
+.section-subway .content-top .history a{
+    position: absolute;
+    left: 50%;
+    top: 75%;
+    color: #fff;
+    font-weight: 500;
+    font-size: 17px;
+    border: 2px solid #fff;
+    padding: 8px 16px;
+    border-radius: 35px;
+}
+
+.section-subway .content-bottom{
+    margin: 30px 0 0 55px;
+    overflow: hidden;
+}
+.section-subway .content-bottom .whats-new{
+    position: relative;
+    width: 870px;
+    height: 300px;
+    background-color: #fff;
+    float: left;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.section-subway .content-bottom .hd{
+    position: absolute;
+    top: 75px;
+    left: 60px;
+}
+.section-subway .content-bottom .hd h2{
+    font-size: 30px;
+    font-weight: 800;
+    background-image: url('../images/bul_tit.png');
+    background-repeat: no-repeat;
+    min-height: 60px;
+    padding: 20px 0 0 25px;
+    margin-bottom: 1px;
+}
+.section-subway .content-bottom .hd p{
+    font-size: 16px;
+    text-align: center;
+    line-height: 26px;
+    color: #666;
+}
+.section-subway .content-bottom .new-list{
+    position: absolute;
+    top: 75px;
+    left: 389px;
+}
+.section-subway .content-bottom .new-list li{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 2.5;
+}
+.section-subway .content-bottom .new-list .more{
+    display: inline-block;
+    padding: 33px 0 8px;
+    color: #999;
+}
+
+// section quick-menu
+.quick-menu{
+    text-align: center;
+    background-color: #fff;
+    padding: 40px 0 37px;
+}
+.quick-menu ul{
+    display: inline-block;
+}
+.quick-menu ul li{
+    float: left;
+    margin-left: 80px;
+}
+.quick-menu ul li:first-child{
+    margin-left: 0;
+}
+.quick-menu ul li a{
+    display: block;
+    overflow: hidden;
+    position: relative;
+    height: 70px;
+    padding-left: 90px;
+}
+.quick-menu ul li .icon{
+    background-image: url('../images/icon_quickmenu.png');
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.quick-menu ul li.qm02 .icon{
+    background-position: -70px 0;
+}
+.quick-menu ul li.qm03 .icon{
+    background-position: -140px 0;
+}
+.quick-menu ul li.qm04 .icon{
+    background-position: -210px 0;
+}
+.quick-menu ul li strong{
+    font-size: 18px;
+    font-weight: 500;
+    display: block;
+    margin-top: 12px;
+    letter-spacing: -0.04em;
+    text-align: left;
+}
+.quick-menu ul li span{
+    color: #999;
+    font-size: 13px;
+    display: block;
+    margin-top: 8px;
+    letter-spacing: -0.02em;
+    text-align: left;
+}
+
+// footer
+.footer{
+    background-color: #292929;
+    color: #666;
+    padding: 22px 0;
+    position: relative;
+    z-index: 9;
+}
+.footer::after{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 59px;
+    width: 100%;
+    height: 1px;
+    background-color: #3b3b3b;
+}
+.footer .container{
+    max-width: 1170px;
+    margin: 0 auto;
+    position: relative;
+}
+.footer .container .until-menu{
+    padding-bottom: 25px;
+}
+.footer .container .until-menu ul{
+    overflow: hidden;
+}
+.footer .container .until-menu ul li{
+    float: left;
+    padding-left: 29px;
+}
+.footer .container .until-menu ul li:first-child{
+    padding-left: 0;
+}
+.footer .container .until-menu ul li:nth-child(2) a{
+    font-weight: 600;
+    color: #bbb;
+}
+.footer .container .until-menu ul li a{
+    color: #666;
+    display: block;
+    font-size: 14ox;
+    letter-spacing: -0.05em;
+}
+.footer .container .footer-conts{
+    margin: 19px 0 5px 0;
+}
+.footer .container .footer-conts ul li{
+    float: left;
+    padding: 0 10px;
+    position: relative;
+    font-size: 13px;
+    line-height: 14px;
+    letter-spacing: -0.05em;
+}
+.footer .container .footer-conts ul li::after{
+    content: '';
+    display: block;
+    width: 2px;
+    height: 10px;
+    background-color: #666;
+    position: absolute;
+    left: 0;
+    top: 3px;
+}
+.footer .container .footer-conts ul li:first-child{
+    padding-left: 0;
+}
+.footer .container .footer-conts ul li:first-child::after{
+    content: none;
+}
+.footer .container .copyright{
+    font-size: 13px;
+    line-height: 25px;
+    letter-spacing: 0.005em;
+}
+.footer .container .sns>div{
+    float: left;
+    position: absolute;
+    overflow: hidden;
+    right: 40px;
+    bottom: 3px;
+}
+.footer .container .sns .instagram{
+    display: block;
+    background-image: url('../images/icon_sns_instagram.png');
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    right: 105px;
+}
+.footer .container .sns .facebook{
+    display: block;
+    background-image: url('../images/icon_sns_facebook.png');
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
 }

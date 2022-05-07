@@ -38,3 +38,9 @@ a {
 img{
     vertical-align: top;
 }
+
+.clearfix::after,.clearfix::before{
+    content:'';
+    display: block;
+    clear:both;
+}

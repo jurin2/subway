@@ -1,7 +1,7 @@
 function QuickLink(){
     return(
         <div className="quick_link">
-            <div className="container">
+            <div className="container clearfix">
                 <div className="store">
                     <a href="#">
                         <strong>매장찾기</strong>
