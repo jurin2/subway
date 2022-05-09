@@ -13,13 +13,13 @@ function MetaTag(){
 
                 <meta property="og:title" content="써브웨이 웹페이지" />
                 <meta property="og:url" content="https://jurin2.github.io/build/index.html/" />
-                <meta property="og:image" content="https://github.com/jurin2/subway/blob/b590caf9ae03be32de794e7a9f126622f973de1d/src/images/og-img.jpg" />
+                <meta property="og:image" content="https://jurin2.github.io/subway/src/images/og-img.jpg" />
                 <meta property="og:description" content="여기를 눌러 링크를 확인하세요." />
 
                 <meta name="twitter:card" content="summary" />
                 <meta name="twitter:title" content="써브웨이 웹페이지" />
                 <meta name="twitter:url" content="https://jurin2.github.io/build/index.html/" />
-                <meta name="twitter:image" content="https://github.com/jurin2/subway/blob/b590caf9ae03be32de794e7a9f126622f973de1d/src/images/og-img.jpg" />
+                <meta name="twitter:image" content="https://jurin2.github.io/subway/src/images/og-img.jpg" />
                 <meta name="twitter:description" content="여기를 눌러 링크를 확인하세요." />
 
                 <link rel="shortcut icon" type="image/x-icon" href="https://jurin2.github.io/subway/favicon.png" />
