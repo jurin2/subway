@@ -12,12 +12,13 @@ HTML, CSS, JavaScript, Jquery, React를 공부하면서 만든 써브웨이 홈�
 
 ### 1. 메타 태그 등록
 #### 홈페이지의 설명, 키워드나 대표이미지, SNS 키워드 등 검색엔진최적화(SEO)에 도움되는 메타 설정
-![image](https://user-images.githubusercontent.com/89722981/165942414-5e433c48-3a4c-4f47-a25b-2cc7bd30dbd3.png)
+![image](https://user-images.githubusercontent.com/89722981/167347917-2cc5e6ec-17b1-4977-b976-032e602e52ab.png)
 <br><br>
 
-### 2. 메인 슬라이드
-<a href="https://github.com/stevenwanderski/bxslider-4?utm_source=cdnjs&utm_medium=cdnjs_link&utm_campaign=cdnjs_library"><img src="https://img.shields.io/badge/CDNJS-d96439?style=flat-square&logo=CDNJS&logoColor=white"/></a>  
-#### 제이쿼리 플러그인 bxslider를 이용한 메인 슬라이드 배너
-  
-<img src="https://user-images.githubusercontent.com/89722981/165811685-ba42bdde-a56b-4bc5-8873-246cfc943799.png" width="100%" alt="메가박스 ajax"/> 
+### 2. 메인 슬라이드 & 메뉴 리스트
+<a href="https://github.com/nolimits4web/swiper"><img src="https://img.shields.io/badge/CDNJS-d96439?style=flat-square&logo=CDNJS&logoColor=white"/></a>  
+#### 자바스크립트 라이브러리 swiper를 이용한 메인 슬라이드 배너 & 메뉴 리스트
+
+<img src="https://user-images.githubusercontent.com/89722981/167348007-1844a205-cf6b-4718-bb98-4dfe891b6ade.png" width="100%" alt="써브웨이 메인 슬라이드"/> 
+<img src="https://user-images.githubusercontent.com/89722981/167348352-145e82d1-729a-4559-9586-e9206e783b72.png" width="100%" alt="써브웨이 메뉴 리스트"/>
 <br><br>
