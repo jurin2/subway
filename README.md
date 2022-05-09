@@ -14,7 +14,7 @@ HTML, CSS, JavaScript, Jquery, React를 공부하면서 만든 써브웨이 홈�
 
 ### 2. 메타 태그 등록
 #### 홈페이지의 설명, 키워드나 대표이미지, SNS 키워드 등 검색엔진최적화(SEO)에 도움되는 메타 설정
-![image](https://user-images.githubusercontent.com/89722981/167347917-2cc5e6ec-17b1-4977-b976-032e602e52ab.png)
+![image](https://user-images.githubusercontent.com/89722981/167358837-a388484f-0b4f-434d-8ec3-23e0df8c26c9.png)
 <br><br>
 
 ### 3. 메인 슬라이드 & 메뉴 리스트
