@@ -2,6 +2,7 @@ import './css/reset.scss';
 import './css/App.scss';
 
 import {useState} from 'react';
+import SEOMetaTag from './SEOMetaTag';
 import Header from './Header'
 import Myslide from './Myslide'
 import NavData from './NavData';
@@ -14,6 +15,7 @@ function App() {
   
   return (
     <div className="App">
+        <SEOMetaTag/>
         <Header title={title}/>
         <Myslide/>
         <QuickLink/>
