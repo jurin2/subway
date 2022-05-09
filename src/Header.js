@@ -26,7 +26,7 @@ function Header(props){
       <header className="header">
         <div className="container">
           <div className="row">
-            <h1 className="logo"><a href="./App.js"><img src={require('./images/main_logo.png')} alt="서브웨이 바로가기" /></a></h1>
+            <h1 className="logo"><a href="https://jurin2.github.io/subway/build/index.html"><img src={require('./images/main_logo.png')} alt="서브웨이 바로가기" /></a></h1>
             <div className="userNav">
               <ul className="clearfix">
                 <li><a href="#">로그인</a></li>
